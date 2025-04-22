@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="myFunction1(), myFunction2()" style="background-color: black; color: aliceblue;">Click me</button>
+    <button id="btn" style="background-color: pink; color: black; margin-left: 20px;">Click me</button>
+
+    <script>
+        function myFunction1(){
+            let x = 5;
+            let y = 10;
+            let z = x + y;
+            setTimeout(()=>{
+                document.getElementById("demo").innerHTML = z;
+            }, 2000)
+        }
+            
+            
+        function myFunction2(){
+            setTimeout(()=>{
+                const play = document.getElementById("demo");
+            play.append(" "+"Number");
+            play.style.color = "red";
+            },3000);
+        }
+
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', function(){
+            alert("you pressed the button!")
+        });
+        
+    </script>
+</body>
+</html>

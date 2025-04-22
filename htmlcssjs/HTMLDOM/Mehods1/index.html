@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">Yooooo</div>
+
+    <script>
+        const p = document.getElementById('demo');
+        p.append(' brooo', ' how are you?');
+
+        const q = document.createElement('div');
+        q.textContent = "I am Good!"
+        p.append(q)
+
+        q.innerText = 'I am not Good!';
+        console.log(q.textContent);
+
+    </script>
+</body>
+</html>
