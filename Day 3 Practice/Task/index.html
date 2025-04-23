@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>,
+    <body class="back-image"></body>
+
+    <div class="navbar">
+        <a href="#" class="logo">Devloop</a>
+
+        <div class="navlinks">
+            <a href="#" class="link" >Home</a>
+            <a href="#" class="link" >Contact</a>
+            <a href="#" class="link" >Info</a>
+            <a href="#" class="link" >About</a>
+            <a href="#" class="link" >Blog</a>
+            <a href="#" class="link" >FAQ</a>
+        </div>
+
+        <div class="useroption">
+            <a href="#">Signin</a>
+            <a href="#">Signout</a>
+        </div>
+    </div>
+
+
+    <header class="head">
+        <h1>Flexbox</h1>
+    </header>
+
+    <main class="container">
+        <section class="sectionflex"> 
+        <section class="contact-form">
+        <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name:" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email:" required>
+        </div>
+
+        <div class="form-group">
+            <label for="number">Phone Number:</label>
+            <input onsubmit="phoneNumber()" type="text" id="number" name="number" placeholder="Enter your Phone Number:" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Give us your feedback" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+
+    <section class="contact-form">
+        <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name:" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email:" required>
+        </div>
+
+        <div class="form-group">
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" name="number" placeholder="Enter your Phone Number:" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Give us your feedback" required></textarea>
+        </div>
+        <button onclick="submitForm()" type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+</section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+            <p>Contact: info@example.com</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        function phoneNumber(){
+            const phoneNumber = document.getElementById("number").value;
+            if(!isNaN(phoneNumber) && phoneNumber.length === 10){
+                console.log("Valid phone number entered: " + phoneNumber);
+            }
+            if(phoneNumber){
+                alert("Phone number entered: " + phoneNumber);
+            }
+            else{ 
+                alert("Please enter a phone number in digits.");
+            }
+        }
+    
+        function submitForm() {
+            alert("Form has been submitted")
+        }
+    </script>
+</body>
+</html>

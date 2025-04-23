@@ -2,7 +2,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
 .container {
@@ -178,6 +178,7 @@ textarea {
     color: rgb(41, 182, 163);
     background-color: white;
     border-color: rgb(41, 182, 163);
+    transition: 1s;
 }
 .site-footer {
     background-color: rgba(27, 192, 165, 0.8);
@@ -185,7 +186,7 @@ textarea {
     text-align: center;
     padding: 1.5rem 0;
     margin-top: 2rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -197,3 +198,4 @@ textarea {
 .site-footer p:last-child {
     margin-bottom: 0;
 }
+

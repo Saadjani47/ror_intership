@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 1</title>
+</head>
+<body>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: lightseagreen;
+        }
+        .logo{
+            text-decoration: none;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            width: 10%;
+        }
+        .link{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 15px;
+            width: 80%;
+        }
+        .useroption{
+            display: flex;  
+            align-items: center;
+        }
+        .useroption a{
+            color: white; 
+            text-decoration: none; 
+            padding: 5px 10px;
+            margin-left: 18px;
+            font-weight: bold;
+            width: 20%;
+        }
+    </style>
+
+
+    <div class="navbar">
+        <a href="#" class="logo">Devloop</a>
+
+        <div class="navlinks">
+            <a href="#" class="link" >Home</a>
+            <a href="#" class="link" >Contact</a>
+            <a href="#" class="link" >Info</a>
+            <a href="#" class="link" >About</a>
+            <a href="#" class="link" >Blog</a>
+            <a href="#" class="link" >FAQ</a>
+        </div>
+
+        <div class="useroption">
+            <a href="#">Signin</a>
+            <a href="#">Signout</a>
+        </div>
+    </div>
+</body>
+</html>
