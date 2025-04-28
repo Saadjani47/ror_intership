@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     color: black;
     min-height: 100vh;
-    background: linear-gradient(rgb(236, 91, 115), rgb(255, 137, 91), rgb(255, 185, 197));
+    background: linear-gradient(rgb(255, 185, 197), rgb(207, 52, 52), rgb(255, 185, 197));
 }
 
 header {
@@ -129,6 +129,44 @@ main {
 
 .image:hover {
     transform: scale(1.03);
+}
+
+.nextprebtn{
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    color: white;
+    border: none;
+    text-align: center;
+}
+.previous{
+    background-color: white;
+    color: orange;
+    font-weight: bolder;
+    font-size: 45px;
+    border-radius: 35px;
+    border: none;
+    margin: 1rem 1rem;
+}
+.next{
+    background-color: white;
+    color: orange;
+    font-weight: bolder;
+    font-size: 45px;
+    border-radius: 35px;
+    border: none;
+    margin: 1rem 1rem;
+}
+
+.next:hover{
+    background-color: orange;
+    color: black;
+    transition: 0.3s;
+}
+.previous:hover{
+    background-color: orange;
+    color: black;
+    transition: 0.3s;
 }
 
 footer {
