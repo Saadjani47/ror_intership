@@ -21,12 +21,29 @@ document.addEventListener('DOMContentLoaded', function() {
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
         const message = document.getElementById('message').value.trim();
-        
+
+        const errormessage = document.getElementById('errormessage')
+
         if (!name || !email || !message) {
-          alert('Please fill in all fields');
+          errormessage.innerText = "Please Fill this field!";
+          errormessage.style.color = 'red';
           return;
         }
-        
+
+        if (name.length < 3) {
+          errormessage.innerText = "Name must be at least 3 characters long";
+          return;
+        }
+        else if (name.length > 30) {
+          errormessage.innerText = "Name must be less than 30 characters long";
+          return;
+        }
+
+        if (message.length > 300) {
+          errormessage.innerText = "Message must be less than 300 characters long";
+          return;
+        }
+
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
           alert('Please enter a valid email');
           return;
@@ -41,13 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
         else if(!confirmUser){
           alert("Message not sent");
           form.reset();
-
         }
-        
       });
     }
   
-    // Highlight active navigation link while scrolling
     window.addEventListener('scroll', function() {
       const scrollPos = window.scrollY + 150;
       
@@ -76,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 
                 document.querySelectorAll('input, textarea').forEach(element => {
-                    element.style.backgroundColor = '#transparent';
+                    element.style.backgroundColor = 'transparent';
                     element.style.color = 'white';
                     element.style.borderColor = 'white';
 
@@ -173,12 +187,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
                 readBtn.removeEventListener('mouseover', () => {
-                  readBtn.style.backgroundColor = 'black';
-                  readBtn.style.color = 'white';
+                  readBtn.style.backgroundColor = '';
+                  readBtn.style.color = '';
                 });
                 readBtn.removeEventListener('mouseout', () => {
-                  readBtn.style.backgroundColor = 'transparent';
-                  readBtn.style.color = 'black';
+                  readBtn.style.backgroundColor = '';
+                  readBtn.style.color = '';
                 });
             }
         });
