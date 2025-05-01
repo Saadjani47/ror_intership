@@ -1,0 +1,7 @@
+Lamda vs procs vs blocks
+ruby is scriptive language or not
+each, map, filter, reduce, find , select, all
+blocks
+modules
+why we use modules except of class
+can we call methods of modules in clases if yes explain how
